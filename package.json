@@ -2,9 +2,9 @@
   "name": "teste-tecnico-neoway",
   "version": "1.0.0",
   "description": "processo seletivo",
-  "main": "index.js",
+  "main": "src/server.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node src/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
