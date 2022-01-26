@@ -1,9 +1,9 @@
 const express = require('express');
-const requestCPF = require('./controller/requestCPF');
+const treatedCPF = require('./service/treatCPF');
 
 const app = express();
 
-requestCPF();
+treatedCPF();
 
 const PORT = process.env.PORT || 4000;
 

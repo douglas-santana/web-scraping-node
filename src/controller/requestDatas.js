@@ -26,7 +26,7 @@ const cpfDatas = async () => {
       }
     }
     const datas = { CPF, name, score };
-    return console.log(datas);
+    return datas;
 }
 
 module.exports = async () => {
@@ -38,7 +38,8 @@ module.exports = async () => {
       const getCPF = $(element).children('a').text();
       CPF.push(getCPF);
     })
-    cpfDatas();
+
+    return cpfDatas();
   } catch (error) {
     console.log('Algo deu errado');
   }
