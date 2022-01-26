@@ -1,7 +1,10 @@
 const express = require('express');
+const requestCPF = require('./controller/requestCPF');
 
 const app = express();
 
-const PORT = process.env.PORT || 3001;
+requestCPF();
 
-app.listen(PORT, () => console.log(`Servidor rodando na porta ${PORT}`));
+const PORT = process.env.PORT || 4000;
+
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
