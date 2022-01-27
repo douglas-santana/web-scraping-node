@@ -1,6 +1,8 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
 
+const treatCPF = require('../service/treatCPF');
+
 let numberOfPage = 1;
 const urlCPF = `https://sample-university-site.herokuapp.com/approvals/${numberOfPage}`;
 

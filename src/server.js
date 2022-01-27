@@ -1,9 +1,11 @@
 const express = require('express');
 const treatedCPF = require('./service/treatCPF');
+const treateName = require('./service/treateName');
 
 const app = express();
 
-treatedCPF();
+// treatedCPF();
+treateName();
 
 const PORT = process.env.PORT || 4000;
 
