@@ -1,8 +1,8 @@
-const requestDatas = require('../controller/requestDatas');
+const requestDatas = require('../request/requestDatas');
 
 module.exports = async () => {
   const getDatas = await requestDatas();
-  console.log(validCPF(getDatas.CPF));
+  return validCPF(getDatas.CPF);
 }
 
 const validCPF = (strCPF) => {

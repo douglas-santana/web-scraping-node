@@ -22,7 +22,7 @@ const cpfDatas = async () => {
           score.push(Score)
         })
       } catch (error) {
-        console.log('erro ao obter os dados do cpf');
+        res.status(500).json({ message: 'Não foi possivel obter os Nomes e Scores' });
       }
     }
     const datas = { CPF, name, score };
@@ -41,6 +41,6 @@ module.exports = async () => {
 
     return cpfDatas();
   } catch (error) {
-    console.log('Algo deu errado');
+    res.status(500).json({ message: 'Não foi possivel obter os CPFs' });
   }
 }

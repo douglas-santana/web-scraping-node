@@ -1,13 +1,10 @@
 const express = require('express');
-/* const treatedCPF = require('./service/treatCPF');
-const treateName = require('./service/treateName');
-const treatScore = require('./service/treatScore'); */
+require('dotenv').config();
 
 const app = express();
 
-// treatedCPF();
-// treateName();
-// treatScore();
+const router = require('./controller')
+app.use(router);
 
 const PORT = process.env.PORT || 4000;
 

@@ -1,8 +1,8 @@
-const requestDatas = require('../controller/requestDatas');
+const requestDatas = require('../request/requestDatas');
 
 module.exports = async () => {
   const getDatas = await requestDatas();
-  console.log(clearScore(getDatas.score));
+  return clearScore(getDatas.score);
 }
 
 const clearScore = (scores) => {
