@@ -1,5 +1,7 @@
 # Boas vindas ao repositório do projeto Web-Scraping-Node
 
+![Arquitetura macro](src/public/visao-macro-arquitetura.png)
+
 Essa API tem o objetivo de capturar os dados (CPF, Nome e Score) do endereço https://sample-university-site.herokuapp.com/, tratar os dados e populá-los dinamicamente no MySQL.
 
 # Habilidades
@@ -12,6 +14,7 @@ Nesse projeto, para persistencia no banco de dados foi construido um back-end us
 - Aplicar os padrões REST;
 - Escrever assinaturas para APIs intuitivas e facilmente entendíveis.
 - Criar e popular tabelas usando `models` do `sequelize`.
+- Utilizar a biblioteca `Cheerio` para web scraping.
 
 # Como usar essa aplicação:
 
