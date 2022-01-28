@@ -14,7 +14,7 @@ Nesse projeto, para persistencia no banco de dados foi construido um back-end us
 - Aplicar os padrões REST;
 - Escrever assinaturas para APIs intuitivas e facilmente entendíveis.
 - Criar e popular tabelas usando `models` do `sequelize`.
-- Utilizar a biblioteca `Cheerio` para web scraping.
+- Utilizar a biblioteca `cheerio` para web scraping.
 
 # Como usar essa aplicação:
 
