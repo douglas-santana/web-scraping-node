@@ -3,6 +3,6 @@ const router = express.Router();
 
 const populateDB = require('./populateDB');
 
-router.post('/', populateDB);
+router.get('/', populateDB);
 
 module.exports = router;
